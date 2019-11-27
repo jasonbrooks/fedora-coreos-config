@@ -2,7 +2,7 @@
 # into "official" builds of Fedora CoreOS (such as including `fedora-release-coreos`)
 # or are very "opinionated" like disabling SSH passwords by default.
 
-include: fedora-coreos-base.yaml
+include: centos-coreos-base.yaml
 
 automatic-version-prefix: "${releasever}.<date:%Y%m%d>.dev"
 mutate-os-release: "${releasever}"
@@ -27,8 +27,8 @@ etc-group-members:
 # XXX: this is used by coreos-assembler for artifact naming...
 rojig:
   license: MIT
-  name: fedora-coreos
-  summary: Fedora CoreOS base image
+  name: centos-coreos
+  summary: CentOS CoreOS base image
 
 # ⚠⚠⚠ ONLY TEMPORARY HACKS ALLOWED HERE; ALL ENTRIES NEED TRACKER LINKS ⚠⚠⚠
 # See also the version of this in fedora-coreos-base.yaml

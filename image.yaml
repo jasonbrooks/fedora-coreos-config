@@ -11,7 +11,7 @@ extra-kargs:
 
 
 # Optional remote by which to prefix the deployed OSTree ref
-ostree-remote: fedora
+ostree-remote: centos
 
 # After this, we plan to add support for the Ignition
 # storage/filesystems sections.  (Although one can do
